@@ -1,0 +1,273 @@
+  /* --- General Styling (Based on portfolio.html theme) --- */
+        :root {
+            --primary-color: #007bff; /* Blue/Accent */
+            --text-color: #333;
+            --background-color: #f4f4f9; /* Light background */
+            --card-background: #fff;
+            --shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+            --border-radius: 8px;
+            --font-family: 'Roboto', sans-serif;
+        }
+
+        body {
+            font-family: 'Roboto', sans-serif;
+            margin: 0;
+            padding: 0;
+            background-color: var(--background-color);
+            color: var(--text-color);
+            line-height: 1.6;
+        }
+
+        .container {
+            max-width: 1200px;
+            margin: 0 auto;
+            padding: 20px;
+        }
+        /* Footer and Links Styling */
+        .footer {
+        text-align: center;
+        padding: 20px 0;
+        font-size: 0.9em;
+        color: var(--secondary-color);
+        }
+
+        .contact-link {
+        color: var(--primary-color);
+        text-decoration: none;
+        font-weight: 500;
+        transition: color 0.3s ease;
+        margin: 0 5px;
+        }
+
+        .contact-link:hover {
+        color: var(--text-color);
+        text-decoration: underline;
+        }
+
+       
+
+
+        /* Header and Navigation Styling */
+
+.main-header {
+    width: 100%;
+    /* Keep background white/light for the professional theme */
+    background-color: var(--card-background); 
+    box-shadow: 0 1px 5px rgba(0, 0, 0, 0.08);
+    position: sticky; /* Makes the header stay at the top */
+    top: 0;
+    z-index: 1000; /* Ensures it is above other content */
+    border-bottom: 1px solid var(--border-color);
+}
+
+.navbar {
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 15px 20px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.nav-logo {
+    font-size: 1.5em;
+    font-weight: 700;
+    color: var(--primary-color);
+    text-decoration: none;
+    letter-spacing: 0.5px;
+}
+
+.nav-links {
+    display: flex;
+    gap: 25px;
+}
+
+.nav-item {
+    color: var(--text-color);
+    text-decoration: none;
+    font-size: 1em;
+    padding: 5px 0;
+    position: relative;
+    transition: color 0.3s ease;
+}
+
+.nav-item:hover {
+    color: var(--primary-color);
+}
+
+/* Underline effect on hover */
+.nav-item::after {
+    content: '';
+    position: absolute;
+    width: 0;
+    height: 2px;
+    bottom: -2px;
+    left: 0;
+    background-color: var(--primary-color);
+    transition: width 0.3s ease;
+}
+
+.nav-item:hover::after {
+    width: 100%;
+}
+
+/* Hide menu toggle button on desktop */
+.menu-toggle {
+    display: none;
+}
+
+/* Responsiveness for the Navigation Bar */
+@media (max-width: 850px) {
+    .nav-links {
+        /* Hide links by default on mobile */
+        display: none;
+        flex-direction: column;
+        width: 100%;
+        position: absolute;
+        top: 60px; /* Adjust based on header height */
+        left: 0;
+        background-color: var(--card-background);
+        border-top: 1px solid var(--border-color);
+        padding: 10px 0;
+        box-shadow: 0 4px 5px rgba(0, 0, 0, 0.05);
+    }
+    
+    .nav-links.active {
+        display: flex;
+    }
+
+    .nav-item {
+        padding: 10px 20px;
+        border-bottom: 1px solid var(--border-color);
+    }
+
+    .menu-toggle {
+        display: block;
+        background: none;
+        border: none;
+        font-size: 1.5em;
+        cursor: pointer;
+        color: var(--text-color);
+    }
+}
+
+
+
+
+    /* Filter Controls */
+        .filter-controls {
+            display: flex;
+            justify-content: center;
+            flex-wrap: wrap;
+            gap: 10px;
+            margin-bottom: 30px;
+        }
+
+        .filter-btn {
+            background-color: var(--card-background);
+            color: var(--text-color);
+            border: 2px solid #ccc;
+            padding: 10px 20px;
+            cursor: pointer;
+            border-radius: var(--border-radius);
+            font-family: 'Roboto', sans-serif;
+            font-weight: 500;
+            transition: background-color 0.3s, border-color 0.3s, transform 0.1s;
+        }
+
+        .filter-btn:hover {
+            background-color: var(--primary-color);
+            color: var(--card-background);
+            border-color: var(--primary-color);
+        }
+
+        .filter-btn.active {
+            background-color: var(--primary-color);
+            color: var(--card-background);
+            border-color: var(--primary-color);
+            transform: translateY(-2px);
+            box-shadow: 0 2px 5px rgba(0, 0, 0, 0.2);
+        }
+ 
+
+
+
+
+
+
+
+        /* Projects Grid */
+        .projects-grid {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+            gap: 30px;
+        }
+
+        /* Project Card */
+        .project-card {
+            background-color: var(--card-background);
+            border-radius: var(--border-radius);
+            box-shadow: var(--shadow);
+            padding: 25px;
+            transition: transform 0.3s, box-shadow 0.3s;
+            display: flex;
+            flex-direction: column;
+            justify-content: space-between;
+        }
+
+        .project-card:hover {
+            transform: translateY(-5px);
+            box-shadow: 0 10px 20px rgba(0, 0, 0, 0.15);
+        }
+
+        .project-card h3 {
+            color: var(--primary-color);
+            margin-top: 0;
+            margin-bottom: 10px;
+            font-size: 1.4rem;
+        }
+
+        .project-card .tag {
+            display: inline-block;
+            background-color: #e0f7fa;
+            color: #00796b;
+            padding: 4px 8px;
+            border-radius: 4px;
+            font-size: 0.8rem;
+            font-weight: 500;
+            margin-bottom: 15px;
+        }
+
+        .project-card p {
+            font-size: 1rem;
+            margin-bottom: 20px;
+        }
+
+        .project-links {
+            display: flex;
+            gap: 15px;
+            margin-top: auto; /* Pushes links to the bottom */
+        }
+
+        .project-link {
+            display: inline-flex;
+            align-items: center;
+            gap: 5px;
+            color: var(--primary-color);
+            text-decoration: none;
+            font-weight: 500;
+            transition: opacity 0.3s;
+        }
+
+        .project-link:hover {
+            opacity: 0.7;
+        }
+
+        /* Fallback/No Projects Message */
+        .no-projects {
+            text-align: center;
+            grid-column: 1 / -1;
+            padding: 40px;
+            font-size: 1.2rem;
+            color: #666;
+        }

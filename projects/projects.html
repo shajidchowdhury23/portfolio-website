@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Projects</title>
+    <link href="./projects.css" rel="stylesheet">
+    <!-- Load Icons -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
+</head>
+<body>
+
+    <header class="main-header">
+        <nav class="navbar">
+            <a href="#" class="nav-logo">Portfolio</a>
+            <div class="nav-links" id="navLinks">
+                <a href="../index.html" class="nav-item">Home</a>
+                <a href="../education/education.html" class="nav-item">Education</a>
+                <a href="../skills/skills.html" class="nav-item">Skills</a>
+                <a href="javascript:void(0);" class="nav-item">Projects</a>
+                <a href="../certificates/certificates.html" class="nav-item">Certificates</a>
+                <a href="https://drive.google.com/file/d/1mVN7FmLZzdDbdRXQbJBfu_QXTiENywVB/view?usp=drive_link" class="nav-item">Resume</a>
+                <a href="https://linkedin.com/in/shajid-chowdhury-3959ab356" target="_blank" class="nav-item external-link">LinkedIn</a>
+                <a href="https://github.com/shajidchowdhury23" target="_blank" class="nav-item external-link">Github</a>
+            </div>
+            <button class="menu-toggle" id="menuToggle" aria-label="Toggle navigation menu">
+                &#9776; 
+            </button>
+        </nav>
+    </header>
+
+    <div class="container">
+        <section id="projects" class="projects-section">
+            <h1 style="color:#007bff;">Projects</h1>
+
+            <div class="filter-controls">
+                <button class="filter-btn active" data-category="all">All Projects</button>
+                <button class="filter-btn" data-category="web_dev">Web Development</button>
+                <button class="filter-btn" data-category="data_science">Data Science</button>
+                <button class="filter-btn" data-category="python">Pyhton</button>
+            </div>
+
+            <div class="projects-grid" id="projectsGrid">
+                <!-- Project cards will be injected here by JavaScript -->
+                <div class="no-projects" id="noProjectsMessage" style="display: none;">
+                    No projects found for this category. Try selecting "All Projects."
+                </div>
+            </div>
+        </section>
+        
+        <footer class="footer">
+            <p>Connect with me:</p>
+            <a href="https://www.facebook.com/shajid.chowdhury.706647" class="contact-link">Facebook</a>  
+            <a href="https://www.instagram.com/zane_vicious/" class="contact-link">Instagram</a>
+        </footer>
+    </div>
+    <script src="./projects.js"></script>
+</body>
+</html>

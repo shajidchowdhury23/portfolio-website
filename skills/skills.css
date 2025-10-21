@@ -1,0 +1,365 @@
+/* Header and Navigation Styling */
+
+.main-header {
+    width: 100%;
+    /* Keep background white/light for the professional theme */
+    background-color: var(--card-background); 
+    box-shadow: 0 1px 5px rgba(0, 0, 0, 0.08);
+    position: sticky; /* Makes the header stay at the top */
+    top: 0;
+    z-index: 1000; /* Ensures it is above other content */
+    border-bottom: 1px solid var(--border-color);
+}
+
+.navbar {
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 15px 20px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.nav-logo {
+    font-size: 1.5em;
+    font-weight: 700;
+    color: var(--primary-color);
+    text-decoration: none;
+    letter-spacing: 0.5px;
+}
+
+.nav-links {
+    display: flex;
+    gap: 25px;
+}
+
+.nav-item {
+    color: var(--text-color);
+    text-decoration: none;
+    font-size: 1em;
+    padding: 5px 0;
+    position: relative;
+    transition: color 0.3s ease;
+}
+
+.nav-item:hover {
+    color: var(--primary-color);
+}
+
+/* Underline effect on hover */
+.nav-item::after {
+    content: '';
+    position: absolute;
+    width: 0;
+    height: 2px;
+    bottom: -2px;
+    left: 0;
+    background-color: var(--primary-color);
+    transition: width 0.3s ease;
+}
+
+.nav-item:hover::after {
+    width: 100%;
+}
+
+/* Hide menu toggle button on desktop */
+.menu-toggle {
+    display: none;
+}
+
+/* Responsiveness for the Navigation Bar */
+@media (max-width: 850px) {
+    .nav-links {
+        /* Hide links by default on mobile */
+        display: none;
+        flex-direction: column;
+        width: 100%;
+        position: absolute;
+        top: 60px; /* Adjust based on header height */
+        left: 0;
+        background-color: var(--card-background);
+        border-top: 1px solid var(--border-color);
+        padding: 10px 0;
+        box-shadow: 0 4px 5px rgba(0, 0, 0, 0.05);
+    }
+    
+    .nav-links.active {
+        display: flex;
+    }
+
+    .nav-item {
+        padding: 10px 20px;
+        border-bottom: 1px solid var(--border-color);
+    }
+
+    .menu-toggle {
+        display: block;
+        background: none;
+        border: none;
+        font-size: 1.5em;
+        cursor: pointer;
+        color: var(--text-color);
+    }
+}
+
+
+
+/* General Reset and Base Styles */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+:root {
+    /* Customizable Variables for Easy Theme Changes */
+    --primary-color: #007bff; /* Blue for highlights/links */
+    --secondary-color: #6c757d; /* Gray for subtle text */
+    --background-color: #f8f9fa; /* Very light gray/off-white */
+    --card-background: #ffffff; /* Pure white for content cards */
+    --text-color: #343a40; /* Dark gray for main text */
+    --border-color: #e9ecef; /* Light border color */
+    --font-family: 'Roboto', sans-serif;
+}
+
+body {
+    font-family: var(--font-family);
+    background-color: var(--background-color);
+    color: var(--text-color);
+    line-height: 1.6;
+    padding: 20px;
+    display: flex;
+    justify-content: center;
+    align-items: flex-start; /* Align content to the top */
+    min-height: 100vh;
+    flex-wrap: wrap;
+}
+
+.container {
+    max-width: 800px; /* Max width for a clean look on large screens */
+    width: 100%;
+    padding: 0 15px;
+}
+
+/* Profile Section Styling */
+.profile-section {
+    text-align: center;
+    margin-bottom: 30px;
+    padding: 20px;
+}
+
+#profile-pic {
+    width: 150px;
+    height: 150px;
+    border-radius: 50%; /* Circular image */
+    object-fit: cover;
+    margin-bottom: 15px;
+    border: 5px solid var(--card-background); /* White border around picture */
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1); /* Subtle shadow */
+}
+
+.name {
+    font-size: 2.5em;
+    font-weight: 700;
+    margin-bottom: 5px;
+    color: var(--primary-color);
+}
+
+.title {
+    font-size: 1.1em;
+    color: var(--secondary-color);
+    font-weight: 300;
+}
+
+/* Card and About Me Section Styling */
+.card {
+    background-color: var(--card-background);
+    padding: 30px;
+    border-radius: 8px;
+    box-shadow: 0 2px 10px rgba(0, 0, 0, 0.05); /* Very light shadow for lift */
+    border: 1px solid var(--border-color);
+    margin-bottom: 20px;
+    margin-top: 65px;
+}
+
+.about-me-section h2 {
+    font-size: 1.8em;
+    margin-bottom: 15px;
+    color: var(--primary-color);
+    border-bottom: 2px solid var(--border-color);
+    padding-bottom: 5px;
+}
+
+.about-me-section p {
+    margin-bottom: 15px;
+}
+
+/* Footer and Links Styling */
+.footer {
+    text-align: center;
+    padding: 20px 0;
+    font-size: 0.9em;
+    color: var(--secondary-color);
+}
+
+.contact-link {
+    color: var(--primary-color);
+    text-decoration: none;
+    font-weight: 500;
+    transition: color 0.3s ease;
+    margin: 0 5px;
+}
+
+.contact-link:hover {
+    color: var(--text-color);
+    text-decoration: underline;
+}
+
+/* RESPONSIVENESS (Mobile Optimization) 
+   The design is fluid, but this ensures good stacking on small screens.
+*/
+@media (max-width: 600px) {
+    body {
+        padding: 10px;
+    }
+
+    .name {
+        font-size: 2em;
+    }
+
+    .title {
+        font-size: 1em;
+    }
+
+    .card {
+        padding: 20px;
+    }
+
+    .about-me-section h2 {
+        font-size: 1.5em;
+    }
+}
+
+
+
+
+
+
+
+
+
+/* --- Global Theme Variables and Base Styles --- */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+:root {
+    /* Customizable Variables from the original theme */
+    --primary-color: #007bff; 
+    --secondary-color: #6c757d; 
+    --background-color: #f8f9fa; 
+    --card-background: #ffffff; 
+    --text-color: #343a40; 
+    --border-color: #e9ecef; 
+    --font-family: 'Roboto', sans-serif;
+}
+
+body {
+    font-family: var(--font-family);
+    background-color: var(--background-color);
+    color: var(--text-color);
+    line-height: 1.6;
+    padding: 20px;
+    display: flex;
+    justify-content: center;
+    align-items: flex-start;
+    min-height: 100vh;
+}
+
+.container {
+    max-width: 800px;
+    width: 100%;
+    padding: 0 15px;
+}
+
+/* --- Card and Section Styling --- */
+.card {
+    background-color: var(--card-background);
+    padding: 30px;
+    border-radius: 8px;
+    box-shadow: 0 2px 10px rgba(0, 0, 0, 0.05); 
+    border: 1px solid var(--border-color);
+    margin-bottom: 20px;
+}
+
+.skills-section h2 {
+    font-size: 1.8em;
+    margin-bottom: 25px;
+    color: var(--primary-color);
+    border-bottom: 2px solid var(--border-color);
+    padding-bottom: 5px;
+}
+
+/* --- Category Styling --- */
+.skill-category {
+    margin-bottom: 30px;
+}
+
+.skill-category h3 {
+    font-size: 1.3em;
+    color: var(--text-color);
+    margin-bottom: 15px;
+    padding-bottom: 5px;
+    border-bottom: 1px solid var(--border-color);
+}
+
+/* --- Individual Skill Item Styles --- */
+.skill-item {
+    display: flex;
+    flex-direction: column;
+    margin-bottom: 15px;
+}
+
+.skill-header {
+    display: flex;
+    justify-content: space-between;
+    margin-bottom: 5px;
+    font-size: 1em;
+    font-weight: 500;
+}
+
+.skill-name {
+    color: var(--text-color);
+}
+
+.skill-percentage {
+    color: var(--secondary-color);
+    font-weight: 300;
+}
+
+/* --- Progress Bar Styles (The Interactive Part) --- */
+.progress-bar-container {
+    width: 100%;
+    height: 8px;
+    background-color: var(--border-color); /* Light gray track */
+    border-radius: 4px;
+    overflow: hidden;
+}
+
+.progress-bar-fill {
+    height: 100%;
+    background-color: var(--primary-color); /* Primary color fill */
+    width: 0; /* Start at 0 width for animation */
+    transition: width 1.5s ease-out; /* Animation transition */
+    border-radius: 4px;
+}
+
+/* --- Footer Styling --- */
+.footer {
+    text-align: center;
+    padding: 20px 0;
+    font-size: 0.9em;
+    color: var(--secondary-color);
+}
