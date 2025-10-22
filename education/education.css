@@ -179,6 +179,7 @@ body {
     box-shadow: 0 2px 10px rgba(0, 0, 0, 0.05); /* Very light shadow for lift */
     border: 1px solid var(--border-color);
     margin-bottom: 20px;
+    margin-left: 20px;
 }
 
 .about-me-section h2 {
@@ -364,4 +365,5 @@ body {
         align-items: flex-start;
         gap: 2px;
     }
+
 }
