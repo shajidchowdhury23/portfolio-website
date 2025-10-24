@@ -7,21 +7,27 @@ const certificateData = [
         issuer: "Udemy",
         date: "September 25",
         link: "https://drive.google.com/file/d/1xPBf9HzlOap0cKje9VyhpbKUl0WjPaM3/view?usp=drive_link",
-        description: "Validated fundamental knowledge of Business Management and Communication."
+        description: "Successfully completed the professional course Business Analysis Fundamentals, endorsed by the International Institute of Business Analysis (IIBA) and offered through Udemy. Gained a comprehensive understanding of business analysis principles, including requirements gathering, stakeholder management, process modeling, and solution evaluation. Developed practical skills in identifying business needs, analyzing data, and recommending effective solutions to improve organizational performance. Demonstrated proficiency in applying internationally recognized business analysis frameworks and techniques, aligning with IIBA standards and best practices for professional excellence in the field."
     },
     {
         title: "Ethical Hacking from Scratch",
         issuer: "Udemy",
         date: "September 25",
         link: "https://drive.google.com/file/d/1PELHPnIMdcx8kRZEYFWexlso0FDXnC2h/view?usp=drive_link",
-        description: "Mastered Penetration Testing and Report Writing · Vulnerability Research · SQL Injection · Kali Linux"
+        description: "Successfully completed the professional course Ethical Hacking from Scratch offered by Udemy, gaining in-depth knowledge of cybersecurity fundamentals, penetration testing, and network security practices. Developed hands-on skills in identifying vulnerabilities, performing ethical attacks, and securing systems against potential threats. Acquired proficiency in using industry-standard tools and techniques for reconnaissance, exploitation, and post-exploitation analysis. Demonstrated a strong understanding of ethical hacking principles, cybersecurity protocols, and responsible digital security practices essential for safeguarding modern IT infrastructures."
     },
     {
         title: "Data Analytics with AI",
         issuer: "Sololearn",
         date: "October 25",
         link: "https://drive.google.com/file/d/1djUy2qGHuFsnq9L0F3l0uLrWKdIakTmW/view?usp=drive_link",
-        description: "This Data Analytics with AI short course is a fast-track training program. It teaches you how to use simple AI tools and smart techniques to quickly find useful patterns and stories hidden in data. It gives you the essential, practical skills to start making smarter, data-driven decisions right away."
+        description: "Successfully completed a professional short course in Data Analytics with AI, developing practical expertise in analyzing, interpreting, and visualizing data using AI-driven tools and techniques. Gained proficiency in leveraging machine learning models and AI platforms for data processing, pattern recognition, and predictive insights. Applied analytical methods to real-world datasets to support data-informed decision-making and business intelligence. Demonstrated the ability to integrate AI technologies effectively for automation, optimization, and strategic problem-solving in professional environments."
+    },
+    {
+        title: "Prompt Engineering",
+        issuer: "Sololearn",
+        link: "https://drive.google.com/file/d/1xKADAPg-uSr5hRgDYX0kfhcro-jkra3Y/view?usp=drive_link",
+        description: "Successfully completed a professional short course in Prompt Engineering, gaining hands-on experience in designing, refining, and optimizing effective prompts for AI systems such as ChatGPT. Developed strong skills in contextual prompt structuring, response optimization, and ethical AI usage. Applied advanced techniques to real-world scenarios involving content creation, data analysis, and problem-solving. Demonstrated the ability to leverage generative AI tools efficiently for professional communication, innovation, and productivity."
     }
 
 ];
