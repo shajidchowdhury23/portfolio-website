@@ -26,6 +26,7 @@ const certificateData = [
     {
         title: "Prompt Engineering",
         issuer: "Sololearn",
+        date: "October 25",
         link: "https://drive.google.com/file/d/1xKADAPg-uSr5hRgDYX0kfhcro-jkra3Y/view?usp=drive_link",
         description: "Successfully completed a professional short course in Prompt Engineering, gaining hands-on experience in designing, refining, and optimizing effective prompts for AI systems such as ChatGPT. Developed strong skills in contextual prompt structuring, response optimization, and ethical AI usage. Applied advanced techniques to real-world scenarios involving content creation, data analysis, and problem-solving. Demonstrated the ability to leverage generative AI tools efficiently for professional communication, innovation, and productivity."
     }
@@ -159,3 +160,4 @@ document.addEventListener('DOMContentLoaded', () => {
         });
     }
 });
+
