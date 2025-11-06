@@ -6,7 +6,7 @@ const skillsData = {
         { name: "Python", proficiency: 90 },
         { name: "JavaScript (ES6+)", proficiency: 95 },
         { name: "HTML5 / CSS3", proficiency: 100 },
-        { name: "Tailwind & Responsive Design", proficiency: 85 },
+        { name: "Bootstrap & Responsive Design", proficiency: 85 },
         { name: "Ethical Hacking and Cybersecurity", proficiency: 85 }
     ],
     backend: [
@@ -146,4 +146,5 @@ document.addEventListener('DOMContentLoaded', () => {
         });
     }
 });
+
 
