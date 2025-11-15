@@ -8,8 +8,15 @@
                 category: "python",
                 techStack: ["Python"],
                 githubUrl: "https://github.com/shajidchowdhury23/python-projects/blob/main/Password-Generator.py",
+            },
+            {
+                id: 3,
+                name: "QR-Code-Generator",
+                description: "This Python tool generates QR codes from user-provided data and saves them as PNG files in a chosen folder. It validates the destination path, handles files reliably, and provides clear feedback, making it easy to use on its own or integrate into larger applications.",
+                category: "python",
+                techStack: ["Python"],
+                githubUrl: "https://github.com/shajidchowdhury23/python-projects/blob/main/QR%20Code%20Generator.py",
             }
-
         ];
 
         const projectsGrid = document.getElementById('projectsGrid');
@@ -109,6 +116,7 @@
                 }
             });
         });
+
 
 
 
