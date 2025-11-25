@@ -7,29 +7,37 @@ const certificateData = [
         issuer: "Udemy",
         date: "September 25",
         link: "https://drive.google.com/file/d/1xPBf9HzlOap0cKje9VyhpbKUl0WjPaM3/view?usp=drive_link",
-        description: "Successfully completed the professional course Business Analysis Fundamentals, endorsed by the International Institute of Business Analysis (IIBA) and offered through Udemy. Gained a comprehensive understanding of business analysis principles, including requirements gathering, stakeholder management, process modeling, and solution evaluation. Developed practical skills in identifying business needs, analyzing data, and recommending effective solutions to improve organizational performance. Demonstrated proficiency in applying internationally recognized business analysis frameworks and techniques, aligning with IIBA standards and best practices for professional excellence in the field."
-    },
+        description:"Skills Gained:<br />I)Business needs assessment<br />II)Requirements gathering and documentation<br />III)Process mapping and workflow analysis<br />IV)Identifying process gaps and improvement opportunities<br />V)Stakeholder analysis and communication<br />VI)Problem-solving and critical thinking"              
+       },
     {
         title: "Ethical Hacking from Scratch",
         issuer: "Udemy",
         date: "September 25",
         link: "https://drive.google.com/file/d/1PELHPnIMdcx8kRZEYFWexlso0FDXnC2h/view?usp=drive_link",
-        description: "Successfully completed the professional course Ethical Hacking from Scratch offered by Udemy, gaining in-depth knowledge of cybersecurity fundamentals, penetration testing, and network security practices. Developed hands-on skills in identifying vulnerabilities, performing ethical attacks, and securing systems against potential threats. Acquired proficiency in using industry-standard tools and techniques for reconnaissance, exploitation, and post-exploitation analysis. Demonstrated a strong understanding of ethical hacking principles, cybersecurity protocols, and responsible digital security practices essential for safeguarding modern IT infrastructures."
+        description: "Skills Gained:<br />I)Knowledge of common vulnerabilities and attack vectors<br />II)Network scanning and enumeration techniques<br />III)Penetration testing methodologies<br />IV)Web application security testing<br />V)Using tools such as Kali Linux, Nmap, Metasploit, Burp Suite, and Wireshark<br />VI)Password cracking and authentication testing"
     },
     {
         title: "Data Analytics with AI",
         issuer: "Sololearn",
         date: "October 25",
         link: "https://drive.google.com/file/d/1djUy2qGHuFsnq9L0F3l0uLrWKdIakTmW/view?usp=drive_link",
-        description: "Successfully completed a professional short course in Data Analytics with AI, developing practical expertise in analyzing, interpreting, and visualizing data using AI-driven tools and techniques. Gained proficiency in leveraging machine learning models and AI platforms for data processing, pattern recognition, and predictive insights. Applied analytical methods to real-world datasets to support data-informed decision-making and business intelligence. Demonstrated the ability to integrate AI technologies effectively for automation, optimization, and strategic problem-solving in professional environments."
+        description: "Skills Gained:<br />I)Understanding of data analytics fundamentals<br />II)Data cleaning, preprocessing, and transformation<br />III)Applying AI and machine learning techniques to datasets<br />IV)Handling large datasets and using AI-driven insights<br />V)Interpreting analytical results for business decision-making<br />VI)Understanding ethical considerations in AI and data usage"
     },
     {
         title: "Prompt Engineering",
         issuer: "Sololearn",
         date: "October 25",
         link: "https://drive.google.com/file/d/1xKADAPg-uSr5hRgDYX0kfhcro-jkra3Y/view?usp=drive_link",
-        description: "Successfully completed a professional short course in Prompt Engineering, gaining hands-on experience in designing, refining, and optimizing effective prompts for AI systems such as ChatGPT. Developed strong skills in contextual prompt structuring, response optimization, and ethical AI usage. Applied advanced techniques to real-world scenarios involving content creation, data analysis, and problem-solving. Demonstrated the ability to leverage generative AI tools efficiently for professional communication, innovation, and productivity."
-    }
+        description: "Skills Gained:<br />I)Understanding how large language models (LLMs) work<br />II)Crafting clear, effective, and goal-oriented prompts<br />III)Using prompt structures such as role prompting, chain-of-thought, and few-shot examples<br />IV)Troubleshooting and refining prompts for better outputs<br />V)Designing prompts for tasks like writing, analysis, coding, and data extraction<br />VI)Building multi-step workflows using AI tools"
+    },
+        {
+        title: "Business Analysis and Process Management",
+        issuer: "Coursera",
+        date: "November 25",
+        link: "https://drive.google.com/file/d/1vUkFSu1_X9cJ8FO1G0urZNYeepj-a6_z/view?usp=drive_link",
+        description: "Skills Gained:<br />I)Modeling business processes using standard frameworks<br />II)Developing process improvement strategies<br />III)Understanding of KPIs and performance metrics<br />IV)Change management awareness<br />V)Supporting data-driven decision-making<br />VI)Creating flow-chart and identifying the root problem"
+    },
+
 
 ];
 
@@ -160,4 +168,3 @@ document.addEventListener('DOMContentLoaded', () => {
         });
     }
 });
-
